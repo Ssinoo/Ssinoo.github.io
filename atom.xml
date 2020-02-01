@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-01T07:03:21.535Z</updated>
+  <updated>2020-02-01T08:40:48.298Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>my second blog</title>
+    <link href="http://yoursite.com/2020/02/02/my-second-blog/"/>
+    <id>http://yoursite.com/2020/02/02/my-second-blog/</id>
+    <published>2020-02-01T16:32:22.000Z</published>
+    <updated>2020-02-01T08:40:48.298Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.整体的优化还没有完全弄完，还是要把前端的知识认真学完<br>2.这头像为什么有两个，没找出问题<br>3.先就这样吧，以后再慢慢的优化！！！<br>4. I can do it!!!!!!!!!!!<del>~</del>!!!!!!!!!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.整体的优化还没有完全弄完，还是要把前端的知识认真学完&lt;br&gt;2.这头像为什么有两个，没找出问题&lt;br&gt;3.先就这样吧，以后再慢慢的优化！！！&lt;br&gt;4. I can do it!!!!!!!!!!!&lt;del&gt;~&lt;/del&gt;!!!!!!!!!&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+      <category term="终于搭好了" scheme="http://yoursite.com/tags/%E7%BB%88%E4%BA%8E%E6%90%AD%E5%A5%BD%E4%BA%86/"/>
+    
+  </entry>
   
   <entry>
     <title>first blog</title>
