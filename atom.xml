@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-01T08:40:48.298Z</updated>
+  <updated>2020-02-02T09:35:13.686Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>my-third-bolg</title>
+    <link href="http://yoursite.com/2020/02/02/my-third-bolg/"/>
+    <id>http://yoursite.com/2020/02/02/my-third-bolg/</id>
+    <published>2020-02-02T09:02:44.924Z</published>
+    <updated>2020-02-02T09:35:13.686Z</updated>
+    
+    <content type="html"><![CDATA[<p>#My third Blog<br>#####1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用<br>#####2.以后我的个人Bolg作为自己学习的储备室<br><font color =red></p><blockquote><p>1，英语的写作可以屯进来，还有日语的写作<br>   2，日常学习的代码，整理一个相当于对自己有帮助的Blog出来<br>   3，可以当做自己的日记本<del>~<br></font><br>#####3，好好学习哈，加油</del><br>2020/2/2 17:34:46 </p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#My third Blog&lt;br&gt;#####1.经过了又一天的初步学习，并且下载了markdownpad&amp;amp;&amp;amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用&lt;br&gt;#####2.以后我的个人Bolg作为自己学习的储备室&lt;br&gt;&lt;font co
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>my second blog</title>
