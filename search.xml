@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>my fourth blog</title>
+    <url>/2020/02/05/my-fourth-blog/</url>
+    <content><![CDATA[<h1 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h1><p> 第四篇博客，虽然都不是什么有营养的东西，但是也看了很多教程，关于博客的搭建和博客的书写，昨天晚上看到了Typora软件的推荐，所以我用来试试，这篇博客后面的内容，用来写MarkDown的语法，和Typora不同的使用方法。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>my-third-bolg</title>
     <url>/2020/02/02/my-third-bolg/</url>
-    <content><![CDATA[<p>#My third Blog<br>#####1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用<br>#####2.以后我的个人Bolg作为自己学习的储备室<br><font color =red></p>
+    <content><![CDATA[<h1 id="My-third-Blog"><a href="#My-third-Blog" class="headerlink" title="My third Blog"></a>My third Blog</h1><h5 id="1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用"><a href="#1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用" class="headerlink" title="1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用"></a>1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用</h5><h5 id="2-以后我的个人Bolg作为自己学习的储备室"><a href="#2-以后我的个人Bolg作为自己学习的储备室" class="headerlink" title="2.以后我的个人Bolg作为自己学习的储备室"></a>2.以后我的个人Bolg作为自己学习的储备室</h5><font color =red>
+
 <blockquote>
-<p>1，英语的写作可以屯进来，还有日语的写作<br>   2，日常学习的代码，整理一个相当于对自己有帮助的Blog出来<br>   3，可以当做自己的日记本<del>~<br></font><br>#####3，好好学习哈，加油</del><br>2020/2/2 17:34:46 </p>
+<p>1，英语的写作可以屯进来，还有日语的写作<br>   2，日常学习的代码，整理一个相当于对自己有帮助的Blog出来<br>   3，可以当做自己的日记本~~<br></font>  </p>
 </blockquote>
+<h5 id="3，好好学习哈，加油"><a href="#3，好好学习哈，加油" class="headerlink" title="3，好好学习哈，加油~~"></a>3，好好学习哈，加油~~</h5><p>2020/2/2 17:34:46 </p>
 ]]></content>
   </entry>
   <entry>

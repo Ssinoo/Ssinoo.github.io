@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-02T09:35:13.686Z</updated>
+  <updated>2020-02-05T07:56:22.591Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>my-third-bolg</title>
-    <link href="http://yoursite.com/2020/02/02/my-third-bolg/"/>
-    <id>http://yoursite.com/2020/02/02/my-third-bolg/</id>
-    <published>2020-02-02T09:02:44.924Z</published>
-    <updated>2020-02-02T09:35:13.686Z</updated>
+    <title>my fourth blog</title>
+    <link href="http://yoursite.com/2020/02/05/my-fourth-blog/"/>
+    <id>http://yoursite.com/2020/02/05/my-fourth-blog/</id>
+    <published>2020-02-05T15:36:03.000Z</published>
+    <updated>2020-02-05T07:56:22.591Z</updated>
     
-    <content type="html"><![CDATA[<p>#My third Blog<br>#####1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用<br>#####2.以后我的个人Bolg作为自己学习的储备室<br><font color =red></p><blockquote><p>1，英语的写作可以屯进来，还有日语的写作<br>   2，日常学习的代码，整理一个相当于对自己有帮助的Blog出来<br>   3，可以当做自己的日记本<del>~<br></font><br>#####3，好好学习哈，加油</del><br>2020/2/2 17:34:46 </p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h1><p> 第四篇博客，虽然都不是什么有营养的东西，但是也看了很多教程，关于博客的搭建和博客的书写，昨天晚上看到了Typora软件的推荐，所以我用来试试，这篇博客后面的内容，用来写MarkDown的语法，和Typora不同的使用方法。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#My third Blog&lt;br&gt;#####1.经过了又一天的初步学习，并且下载了markdownpad&amp;amp;&amp;amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用&lt;br&gt;#####2.以后我的个人Bolg作为自己学习的储备室&lt;br&gt;&lt;font co
+        &lt;h1 id=&quot;Typora&quot;&gt;&lt;a href=&quot;#Typora&quot; class=&quot;headerlink&quot; title=&quot;Typora&quot;&gt;&lt;/a&gt;Typora&lt;/h1&gt;&lt;p&gt; 第四篇博客，虽然都不是什么有营养的东西，但是也看了很多教程，关于博客的搭建和博客的书写，昨天晚上看到了Ty
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>my-third-bolg</title>
+    <link href="http://yoursite.com/2020/02/02/my-third-bolg/"/>
+    <id>http://yoursite.com/2020/02/02/my-third-bolg/</id>
+    <published>2020-02-02T09:02:44.924Z</published>
+    <updated>2020-02-05T07:38:26.663Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="My-third-Blog"><a href="#My-third-Blog" class="headerlink" title="My third Blog"></a>My third Blog</h1><h5 id="1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用"><a href="#1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用" class="headerlink" title="1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用"></a>1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用</h5><h5 id="2-以后我的个人Bolg作为自己学习的储备室"><a href="#2-以后我的个人Bolg作为自己学习的储备室" class="headerlink" title="2.以后我的个人Bolg作为自己学习的储备室"></a>2.以后我的个人Bolg作为自己学习的储备室</h5><font color =red><blockquote><p>1，英语的写作可以屯进来，还有日语的写作<br>   2，日常学习的代码，整理一个相当于对自己有帮助的Blog出来<br>   3，可以当做自己的日记本~~<br></font>  </p></blockquote><h5 id="3，好好学习哈，加油"><a href="#3，好好学习哈，加油" class="headerlink" title="3，好好学习哈，加油~~"></a>3，好好学习哈，加油~~</h5><p>2020/2/2 17:34:46 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;My-third-Blog&quot;&gt;&lt;a href=&quot;#My-third-Blog&quot; class=&quot;headerlink&quot; title=&quot;My third Blog&quot;&gt;&lt;/a&gt;My third Blog&lt;/h1&gt;&lt;h5 id=&quot;1-经过了又一天的初步学习，并且下载了ma
       
     
     </summary>
