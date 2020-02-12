@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-12T11:58:31.530Z</updated>
+  <updated>2020-02-12T12:09:08.097Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>fifth</title>
+    <title>my-fifth-blog</title>
     <link href="http://yoursite.com/2020/02/13/fifth/"/>
     <id>http://yoursite.com/2020/02/13/fifth/</id>
     <published>2020-02-12T19:39:09.000Z</published>
-    <updated>2020-02-12T11:58:31.530Z</updated>
+    <updated>2020-02-12T12:09:08.097Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="live2d"><a href="#live2d" class="headerlink" title="live2d"></a>live2d</h2><p>今天设置了一个 live2d的人物模型在右下角</p><font color =bule ><p>老二刺猿了。。。。</p></font><p>老二刺猿了。。。。</p></font ><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>博客的根目录下执行下方命令：</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-helper-live2d --save</span><br></pre></td></tr></table></figure><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-你选的人物模型名字 --save</span><br></pre></td></tr></table></figure><h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>在主题config下 加入以下代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw&#x2F;</span><br><span class="line">  pluginJsPath: lib&#x2F;</span><br><span class="line">  pluginModelPath: assets&#x2F;</span><br><span class="line">  tagMode: false</span><br><span class="line">  log: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-&lt;你喜欢的模型名字&gt;</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure><h3 id="结束啦"><a href="#结束啦" class="headerlink" title="结束啦"></a>结束啦</h3><p>就这样hhh，老二刺猿做的事情 。。。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="live2d"><a href="#live2d" class="headerlink" title="live2d"></a>live2d</h2><p>今天设置了一个 live2d的人物模型在右下角</p><font color =bule ><p>老二刺猿了。。。。</p></font><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>博客的根目录下执行下方命令：</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-helper-live2d --save</span><br></pre></td></tr></table></figure><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-你选的人物模型名字 --save</span><br></pre></td></tr></table></figure><h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>在主题config下 加入以下代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw&#x2F;</span><br><span class="line">  pluginJsPath: lib&#x2F;</span><br><span class="line">  pluginModelPath: assets&#x2F;</span><br><span class="line">  tagMode: false</span><br><span class="line">  log: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-&lt;你喜欢的模型名字&gt;</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure><h3 id="结束啦"><a href="#结束啦" class="headerlink" title="结束啦"></a>结束啦</h3><p>就这样hhh，老二刺猿做的事情 。。。</p>]]></content>
     
     <summary type="html">
     
@@ -97,7 +97,7 @@
     <link href="http://yoursite.com/2020/02/02/my-second-blog/"/>
     <id>http://yoursite.com/2020/02/02/my-second-blog/</id>
     <published>2020-02-01T16:32:22.000Z</published>
-    <updated>2020-02-12T11:58:49.271Z</updated>
+    <updated>2020-02-12T12:08:01.928Z</updated>
     
     <content type="html"><![CDATA[<p>1.整体的优化还没有完全弄完，还是要把前端的知识认真学完<br>2.这头像为什么有两个，没找出问题<br>3.先就这样吧，以后再慢慢的优化！！！<br>4. I can do it!!!!!!!!!!!<del>~</del>!!!!!!!!!</p>]]></content>
     
@@ -115,7 +115,7 @@
       <category term="daily" scheme="http://yoursite.com/categories/daily/"/>
     
     
-      <category term="终于搭好了" scheme="http://yoursite.com/tags/%E7%BB%88%E4%BA%8E%E6%90%AD%E5%A5%BD%E4%BA%86/"/>
+      <category term="搭博客" scheme="http://yoursite.com/tags/%E6%90%AD%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   

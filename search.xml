@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>fifth</title>
+    <title>my-fifth-blog</title>
     <url>/2020/02/13/fifth/</url>
     <content><![CDATA[<h2 id="live2d"><a href="#live2d" class="headerlink" title="live2d"></a>live2d</h2><p>今天设置了一个 live2d的人物模型在右下角</p>
 <font color =bule >
 
 <p>老二刺猿了。。。。</p>
 </font>
-
-<p>老二刺猿了。。。。</p>
-</font >
 
 <h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>博客的根目录下执行下方命令：</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install hexo-helper-live2d --save</span><br></pre></td></tr></table></figure>
@@ -59,7 +56,7 @@
         <category>daily</category>
       </categories>
       <tags>
-        <tag>终于搭好了</tag>
+        <tag>搭博客</tag>
       </tags>
   </entry>
   <entry>
