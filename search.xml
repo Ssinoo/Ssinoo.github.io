@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>fifth</title>
+    <url>/2020/02/13/fifth/</url>
+    <content><![CDATA[<h2 id="live2d"><a href="#live2d" class="headerlink" title="live2d"></a>live2d</h2><p>今天设置了一个 live2d的人物模型在右下角</p>
+<font color =bule >
+
+<p>老二刺猿了。。。。</p>
+</font>
+
+<p>老二刺猿了。。。。</p>
+</font >
+
+<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>博客的根目录下执行下方命令：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install hexo-helper-live2d --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install live2d-widget-model-你选的人物模型名字 --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>在主题config下 加入以下代码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw&#x2F;</span><br><span class="line">  pluginJsPath: lib&#x2F;</span><br><span class="line">  pluginModelPath: assets&#x2F;</span><br><span class="line">  tagMode: false</span><br><span class="line">  log: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-&lt;你喜欢的模型名字&gt;</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="结束啦"><a href="#结束啦" class="headerlink" title="结束啦"></a>结束啦</h3><p>就这样hhh，老二刺猿做的事情 。。。</p>
+]]></content>
+      <categories>
+        <category>daily</category>
+      </categories>
+      <tags>
+        <tag>live2d</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>my fourth blog</title>
     <url>/2020/02/05/my-fourth-blog/</url>
     <content><![CDATA[<h1 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h1><p> 第四篇博客，虽然都不是什么有营养的东西，但是也看了很多教程，关于博客的搭建和博客的书写，昨天晚上看到了Typora软件的推荐，所以我用来试试，这篇博客后面的内容，用来写MarkDown的语法，和Typora不同的使用方法。</p>
@@ -12,7 +41,7 @@
   <entry>
     <title>my-third-bolg</title>
     <url>/2020/02/02/my-third-bolg/</url>
-    <content><![CDATA[<h1 id="My-third-Blog"><a href="#My-third-Blog" class="headerlink" title="My third Blog"></a>My third Blog</h1><p>categories: daily </p>
+    <content><![CDATA[<h1 id="My-third-Blog"><a href="#My-third-Blog" class="headerlink" title="My third Blog"></a>My third Blog</h1><p>categories:  daily </p>
 <h5 id="1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用"><a href="#1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用" class="headerlink" title="1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用"></a>1.经过了又一天的初步学习，并且下载了markdownpad&amp;&amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用</h5><h5 id="2-以后我的个人Bolg作为自己学习的储备室"><a href="#2-以后我的个人Bolg作为自己学习的储备室" class="headerlink" title="2.以后我的个人Bolg作为自己学习的储备室"></a>2.以后我的个人Bolg作为自己学习的储备室</h5><font color =red>
 
 <blockquote>
@@ -36,7 +65,9 @@
   <entry>
     <title>first blog</title>
     <url>/2020/02/01/first-blog/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>开通自己的个人博客了，基于hexo还有GitHub的个人仓库，</p>
+<p>为了好玩和记录，just like diary~</p>
+]]></content>
       <categories>
         <category>daily</category>
       </categories>
