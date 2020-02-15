@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-12T12:09:08.097Z</updated>
+  <updated>2020-02-14T23:15:44.329Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据库笔记</title>
+    <link href="http://yoursite.com/2020/02/14/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2020/02/14/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-02-14T12:20:53.547Z</published>
+    <updated>2020-02-14T23:15:44.329Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h2 id="DDL-操作数据库，表"><a href="#DDL-操作数据库，表" class="headerlink" title="DDL:操作数据库，表"></a>DDL:操作数据库，表</h2><h3 id="操作数据库：CRUD"><a href="#操作数据库：CRUD" class="headerlink" title="操作数据库：CRUD"></a>操作数据库：CRUD</h3><ol><li><p>Creat</p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200214211842207.png" alt="image-20200214211842207"></p></li><li><p>Retrirve</p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200214212905703.png" alt="image-20200214212905703"></p></li><li><p>Update</p><img src="C:\Users\44910\AppData\Roaming\Typora\typora-user-images\image-20200214212821161.png" alt="image-20200214212821161"  /></li><li><p>Delete</p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200214212849441.png" alt="image-20200214212849441"></p></li></ol><h2 id="DQL-（DATE-QUERY）"><a href="#DQL-（DATE-QUERY）" class="headerlink" title="DQL （DATE QUERY）"></a>DQL （DATE QUERY）</h2><h3 id="单表查询"><a href="#单表查询" class="headerlink" title="单表查询"></a>单表查询</h3><h4 id="1-分组查询"><a href="#1-分组查询" class="headerlink" title="1.分组查询"></a>1.分组查询</h4><img src="C:\Users\44910\AppData\Roaming\Typora\typora-user-images\image-20200215050319705.png" alt="image-20200215050319705" style="zoom:200%;" /><img src="C:\Users\44910\AppData\Roaming\Typora\typora-user-images\image-20200215050218102.png" alt="image-20200215050218102" style="zoom:150%;" /><h4 id="2-分页查询"><a href="#2-分页查询" class="headerlink" title="2.分页查询"></a>2.分页查询</h4><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215051340725.png" alt="image-20200215051340725"></p><h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215052009192.png" alt="image-20200215052009192"></p><h4 id="非空约束"><a href="#非空约束" class="headerlink" title="非空约束"></a>非空约束</h4><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215052648201.png" alt="image-20200215052648201"></p><h4 id="唯一约束"><a href="#唯一约束" class="headerlink" title="唯一约束"></a>唯一约束</h4><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215052836352.png" alt="image-20200215052836352"></p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215053317529.png" alt="image-20200215053317529"></p><h4 id="主键约束"><a href="#主键约束" class="headerlink" title="主键约束"></a>主键约束</h4><p>主键约束（primary key）</p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215053549404.png" alt="image-20200215053549404"></p><p>↓创建一个</p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215053704507.png" alt="image-20200215053704507"></p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215054033804.png" alt="image-20200215054033804"></p><h5 id="自动增长"><a href="#自动增长" class="headerlink" title="自动增长"></a>自动增长</h5><p>数值类型的，使用 auto_increment来实现自动增长</p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215054609607.png" alt="image-20200215054609607"></p><h4 id="外键约束"><a href="#外键约束" class="headerlink" title="外键约束"></a>外键约束</h4><p>foreign key</p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215055626122.png" alt="image-20200215055626122"></p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215055921310.png" alt="image-20200215055921310"></p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215060416099.png" alt="image-20200215060416099"></p><h5 id="级联操作"><a href="#级联操作" class="headerlink" title="级联操作"></a>级联操作</h5><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215061149334.png" alt="image-20200215061149334"></p><h2 id="数据库的设计"><a href="#数据库的设计" class="headerlink" title="数据库的设计"></a>数据库的设计</h2><h3 id="1-多表之间的关系"><a href="#1-多表之间的关系" class="headerlink" title="1.多表之间的关系"></a>1.多表之间的关系</h3><h4 id="1-一对多"><a href="#1-一对多" class="headerlink" title="1.一对多"></a>1.一对多</h4><h4 id="2-多对多"><a href="#2-多对多" class="headerlink" title="2.多对多"></a>2.多对多</h4><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215063133203.png" alt="image-20200215063133203"></p><h3 id="2-数据库范式"><a href="#2-数据库范式" class="headerlink" title="2.数据库范式"></a>2.数据库范式</h3><h4 id="第一范式"><a href="#第一范式" class="headerlink" title="第一范式"></a>第一范式</h4><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215065032907.png" alt="image-20200215065032907"></p><h4 id="第二范式"><a href="#第二范式" class="headerlink" title="第二范式"></a>第二范式</h4><p>1.函数依赖：A–&gt;B,通过A属性(组)的值，确定唯一B属性的值，则B依赖A</p><p> 如：              <strong>学号–&gt;名字    （学号，课程 ）    –&gt; 分数</strong></p><p>2.完全函数依赖</p><p>如：                <strong>（学号，课程） –&gt; 分数</strong></p><p>3.部分函数依赖</p><p>如：                 <strong>（学号，课程） –&gt;名字</strong></p><p>4.传递性依赖</p><p>如：                   <strong>学号–&gt;系名，系名–&gt;系班主任</strong><br>5：码： </p><p>如：                 <strong>该表的码为（学号，课程名称</strong></p><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215070737784.png" alt="image-20200215070737784"></p><h4 id="第三范式"><a href="#第三范式" class="headerlink" title="第三范式"></a>第三范式</h4><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215070942108.png" alt="image-20200215070942108"></p><h2 id="数据库的备份和还原"><a href="#数据库的备份和还原" class="headerlink" title="数据库的备份和还原"></a>数据库的备份和还原</h2><p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200215071519676.png" alt="image-20200215071519676"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Mysql&quot;&gt;&lt;a href=&quot;#Mysql&quot; class=&quot;headerlink&quot; title=&quot;Mysql&quot;&gt;&lt;/a&gt;Mysql&lt;/h1&gt;&lt;h2 id=&quot;DDL-操作数据库，表&quot;&gt;&lt;a href=&quot;#DDL-操作数据库，表&quot; class=&quot;headerlink
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>my-fifth-blog</title>
