@@ -27,10 +27,12 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;Mysql&quot;&gt;&lt;a href=&quot;#Mysql&quot; class=&quot;headerlink&quot; title=&quot;Mysql&quot;&gt;&lt;/a&gt;Mysql&lt;/h1&gt;&lt;h2 id=&quot;DDL-（Data-Definition-Language）数据定义语言&quot;&gt;&lt;a href=&quot;#DDL-（
-      
+      &lt;h1 id=&quot;Mysql&quot;&gt;&lt;a href=&quot;#Mysql&quot; class=&quot;headerlink&quot; title=&quot;Mysql&quot;&gt;&lt;/a&gt;Mysql&lt;/h1&gt;&lt;h2 id=&quot;DDL-（Data-Definition-Language）数据定义语言&quot;&gt;&lt;a href=&quot;#DDL-（Data-Definition-Language）数据定义语言&quot; class=&quot;headerlink&quot; title=&quot;DDL:（Data Definition Language）数据定义语言&quot;&gt;&lt;/a&gt;DDL:（Data Definition Language）数据定义语言&lt;/h2&gt;&lt;h3 id=&quot;1-基础查询&quot;&gt;&lt;a href=&quot;#1-基础查询&quot; class=&quot;headerlink&quot; title=&quot;1.基础查询&quot;&gt;&lt;/a&gt;1.基础查询&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&quot;2-条件查询&quot;&gt;&lt;a href=&quot;#2-条件查询&quot; class=&quot;headerlink&quot; title=&quot;2.条件查询&quot;&gt;&lt;/a&gt;2.条件查询&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- 语法：  select 查询列表 from 表明 where 筛选条件;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 测试题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - 查询没有奖金，且工资小于18000的salary, last_name：  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;SELECT &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  salary,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  last_name &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FROM&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  employees &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;WHERE commission_pct IS NULL &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  AND salary &amp;lt; 18000;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;3-排序查询&quot;&gt;&lt;a href=&quot;#3-排序查询&quot; class=&quot;headerlink&quot; title=&quot;3.排序查询&quot;&gt;&lt;/a&gt;3.排序查询&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- 语法： &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  select 查询列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  from 表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  【where 筛选条件】&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  order by 排序列表 【asc|desc】&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 测试题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - 查询员工的姓名和部门号和年薪，按年薪降序，按姓名升序&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;SELECT &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  last_name,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  department_id,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  salary * 12 * (1+ IFNULL(commission_pct, 0)) AS 年薪 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FROM&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  employees &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ORDER BY 年薪 DESC,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  last_name ASC ;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;4-分组查询&quot;&gt;&lt;a href=&quot;#4-分组查询&quot; class=&quot;headerlink&quot; title=&quot;4.分组查询&quot;&gt;&lt;/a&gt;4.分组查询&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  - 语法： &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  select 分组函数，列（要求出现在group by的后面）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  from 表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  【where 筛选条件】&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  group by 分组的列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  【having 分组后的筛选】&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  【order by 子句】&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 测试题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - 查询邮箱中包含a字符的，每个部门的平均工资&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  AVG(salary),&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  department_id &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FROM&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  employees &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;WHERE email LIKE &amp;#39;%a%&amp;#39; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;GR&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;OUP BY department_id ;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -49,13 +51,18 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;live2d&quot;&gt;&lt;a href=&quot;#live2d&quot; class=&quot;headerlink&quot; title=&quot;live2d&quot;&gt;&lt;/a&gt;live2d&lt;/h2&gt;&lt;p&gt;今天设置了一个 live2d的人物模型在右下角&lt;/p&gt;
-&lt;font color =bule &gt;
+      &lt;h2 id=&quot;live2d&quot;&gt;&lt;a href=&quot;#live2d&quot; class=&quot;headerlink&quot; title=&quot;live2d&quot;&gt;&lt;/a&gt;live2d&lt;/h2&gt;&lt;p&gt;今天设置了一个 live2d的人物模型在右下角&lt;/p&gt;
+&lt;font color=&quot;bule&quot;&gt;
 
-&lt;p&gt;老二
-      
+&lt;p&gt;老二刺猿了。。。。&lt;/p&gt;
+&lt;/font&gt;
+
+&lt;h3 id=&quot;第一步&quot;&gt;&lt;a href=&quot;#第一步&quot; class=&quot;headerlink&quot; title=&quot;第一步&quot;&gt;&lt;/a&gt;第一步&lt;/h3&gt;&lt;p&gt;博客的根目录下执行下方命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-helper-live2d --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;第二步&quot;&gt;&lt;a href=&quot;#第二步&quot; class=&quot;headerlink&quot; title=&quot;第二步&quot;&gt;&lt;/a&gt;第二步&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install live2d-widget-model-你选的人物模型名字 --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;第三步&quot;&gt;&lt;a href=&quot;#第三步&quot; class=&quot;headerlink&quot; title=&quot;第三步&quot;&gt;&lt;/a&gt;第三步&lt;/h3&gt;&lt;p&gt;在主题config下 加入以下代码&lt;/p&gt;
     
     </summary>
     
@@ -78,10 +85,8 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;Typora&quot;&gt;&lt;a href=&quot;#Typora&quot; class=&quot;headerlink&quot; title=&quot;Typora&quot;&gt;&lt;/a&gt;Typora&lt;/h1&gt;&lt;p&gt; 第四篇博客，虽然都不是什么有营养的东西，但是也看了很多教程，关于博客的搭建和博客的书写，昨天晚上看到了Ty
-      
+      &lt;h1 id=&quot;Typora&quot;&gt;&lt;a href=&quot;#Typora&quot; class=&quot;headerlink&quot; title=&quot;Typora&quot;&gt;&lt;/a&gt;Typora&lt;/h1&gt;&lt;p&gt; 第四篇博客，虽然都不是什么有营养的东西，但是也看了很多教程，关于博客的搭建和博客的书写，昨天晚上看到了Typora软件的推荐，所以我用来试试，这篇博客后面的内容，用来写MarkDown的语法，和Typora不同的使用方法。&lt;/p&gt;
+
     
     </summary>
     
@@ -102,11 +107,14 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;My-third-Blog&quot;&gt;&lt;a href=&quot;#My-third-Blog&quot; class=&quot;headerlink&quot; title=&quot;My third Blog&quot;&gt;&lt;/a&gt;My third Blog&lt;/h1&gt;&lt;p&gt;categories:  daily &lt;/p&gt;
-&lt;h
-      
+      &lt;h1 id=&quot;My-third-Blog&quot;&gt;&lt;a href=&quot;#My-third-Blog&quot; class=&quot;headerlink&quot; title=&quot;My third Blog&quot;&gt;&lt;/a&gt;My third Blog&lt;/h1&gt;&lt;p&gt;categories:  daily &lt;/p&gt;
+&lt;h5 id=&quot;1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用&quot;&gt;&lt;a href=&quot;#1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用&quot; class=&quot;headerlink&quot; title=&quot;1.经过了又一天的初步学习，并且下载了markdownpad&amp;amp;&amp;amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用&quot;&gt;&lt;/a&gt;1.经过了又一天的初步学习，并且下载了markdownpad&amp;amp;&amp;amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用&lt;/h5&gt;&lt;h5 id=&quot;2-以后我的个人Bolg作为自己学习的储备室&quot;&gt;&lt;a href=&quot;#2-以后我的个人Bolg作为自己学习的储备室&quot; class=&quot;headerlink&quot; title=&quot;2.以后我的个人Bolg作为自己学习的储备室&quot;&gt;&lt;/a&gt;2.以后我的个人Bolg作为自己学习的储备室&lt;/h5&gt;&lt;font color=&quot;red&quot;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1，英语的写作可以屯进来，还有日语的写作&lt;br&gt;   2，日常学习的代码，整理一个相当于对自己有帮助的Blog出来&lt;br&gt;   3，可以当做自己的日记本~~&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/font&gt;  &lt;p&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;3，好好学习哈，加油&quot;&gt;&lt;a href=&quot;#3，好好学习哈，加油&quot; class=&quot;headerlink&quot; title=&quot;3，好好学习哈，加油~~&quot;&gt;&lt;/a&gt;3，好好学习哈，加油~~&lt;/h5&gt;&lt;p&gt;2020/2/2 17:34:46 &lt;/p&gt;
+
     
     </summary>
     
@@ -125,11 +133,8 @@
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;1.整体的优化还没有完全弄完，还是要把前端的知识认真学完&lt;br&gt;2.这头像为什么有两个，没找出问题&lt;br&gt;3.先就这样吧，以后再慢慢的优化！！！&lt;br&gt;4. I can do it!!!!!!!!!!!&lt;del&gt;~&lt;/del&gt;!!!!!!!!!&lt;/p&gt;
+      &lt;p&gt;1.整体的优化还没有完全弄完，还是要把前端的知识认真学完&lt;br&gt;2.这头像为什么有两个，没找出问题&lt;br&gt;3.先就这样吧，以后再慢慢的优化！！！&lt;br&gt;4. I can do it!!!!!!!!!!!&lt;del&gt;~&lt;/del&gt;!!!!!!!!!&lt;/p&gt;
 
-      
     
     </summary>
     
@@ -152,12 +157,9 @@
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;开通自己的个人博客了，基于hexo还有GitHub的个人仓库，&lt;/p&gt;
+      &lt;p&gt;开通自己的个人博客了，基于hexo还有GitHub的个人仓库，&lt;/p&gt;
 &lt;p&gt;为了好玩和记录，just like diary~&lt;/p&gt;
 
-      
     
     </summary>
     
