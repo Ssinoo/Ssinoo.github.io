@@ -335,7 +335,10 @@
   <entry>
     <title>my second blog</title>
     <url>/2020/02/02/my-second-blog/</url>
-    <content><![CDATA[<p>1.整体的优化还没有完全弄完，还是要把前端的知识认真学完<br>2.这头像为什么有两个，没找出问题<br>3.先就这样吧，以后再慢慢的优化！！！<br>4. I can do it!!!!!!!!!!!<del>~</del>!!!!!!!!!</p>
+    <content><![CDATA[<p>1.整体的优化还没有完全弄完，还是要把前端的知识认真学完<br>2.这头像为什么有两个，没找出问题<br>3.先就这样吧，以后再慢慢的优化！！！</p>
+<ol start="4">
+<li>I can do it!!!!!!!!!!!<del>~</del>!!!!!!!!!</li>
+</ol>
 ]]></content>
       <categories>
         <category>daily</category>

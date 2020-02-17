@@ -1212,7 +1212,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4effab;
+  background: #1a8a06;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2655,8 +2655,8 @@ ul.breadcrumb li + li:last-child {
   padding-left: 3px;
 }
 .post {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
