@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>抗疫日记</title>
+    <url>/2020/03/01/%E6%8A%97%E7%96%AB%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="《抗疫日记》"><a href="#《抗疫日记》" class="headerlink" title="《抗疫日记》"></a>《抗疫日记》</h1><p>  小学生作文，文笔也太差了</p>
+<a id="more"></a> 
+
+<p>  2020，听起来很好听的年份，一个拥有重要事件的年份，要实现全面小康的一年。生肖年新的一轮的开端。 </p>
+<p>  1月初放假了，在家没呆几天就回湖北老家了，本来开开心心买了一堆年货，可以陪爷爷奶奶和很久不见的堂兄弟们，回老家的第二天，湖北爆发了新型冠状病毒，刚开始不以为然，偶尔还去小卖部买几瓶喝的，去快递点拿快递，想着就这种小病怎么可能会传染到我。</p>
+<p>事情的发展总是会出乎意料，我所处的湖北孝感，瞬间成为除武汉以外确诊人数最多的地方，一个市超过了所有外省，刚开始每天提心吊胆，时不时摸自己的额头看看有没有变热，喉咙时不时干咳一下，确认有没有咳嗽，每天不停的刷着微博的疫情状况，希望有什么特效药的出现，但是特效药的出现几乎不可能在短时间研发成功的，唯一能做到的是靠自身的免疫力和外界药物的抑制。每天的内容都会有很多变化，从开始的几百几百例的增加到突然一天增加的近3万人一天，除了震惊还有害怕，毕竟我就处于湖北。</p>
+<p>  从这一次的疫情看出来管理层的腐败，身为湖北人对湖北产生了厌恶，各种对疫情的隐瞒，各种决策的失误，李文亮医生说真话被当谣言，连逝世的那段时间都显的那么不真实，老鼠屎总归还是会被铲除的，虽然也不知道老鼠屎被铲干净了没有，但是现在事情都是向善的，出院人数已经实现了反超，至今每天还是去看疫情的报道，我这确诊虽然还是处于全国第二，但是增加的人数越来越少，希望疫情赶紧过去吧，待到春暖花开，我们相聚一堂，繁花与共。</p>
+]]></content>
+      <categories>
+        <category>daily</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Request</title>
+    <url>/2020/02/17/Request/</url>
+    <content><![CDATA[<h2 id="Http"><a href="#Http" class="headerlink" title="Http:"></a>Http:</h2><p>基于TCP/IP的高级协议</p>
+<h3 id="请求消息数据格式"><a href="#请求消息数据格式" class="headerlink" title="请求消息数据格式"></a>请求消息数据格式</h3><p>1.请求行</p>
+<p>​    请求方式 请求url 请求协议/版本</p>
+<p>​    GET/login.html HTTP/1.1</p>
+<p>​    *请求方式</p>
+<p>​            GET:请求参数在url中，不安全</p>
+<p>​            POST：请求参数在请求体中</p>
+<p>2.请求头</p>
+<p>​    请求头名称： 请求头值</p>
+<p>​        请求头：</p>
+<p>​            1.User-Agent：获取服务器端，解决浏览器的兼容性</p>
+<p>3.请求空行</p>
+<p>​    空行</p>
+]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Http</tag>
+        <tag>Request</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Servlet笔记</title>
     <url>/2020/02/17/Servlet/</url>
-    <content><![CDATA[<h1 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h1><ul>
-<li><p>概念：server applet 客户端的小程序</p>
-<ul>
-<li>Servlet就是一个接口，定义Java类被浏览器访问到（tomcat识别）</li>
-<li>定义一个类，实现Servlet接口，复写方法。</li>
-</ul>
+    <content><![CDATA[<h1 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h1><h2 id="概念：server-applet-客户端的小程序"><a href="#概念：server-applet-客户端的小程序" class="headerlink" title="概念：server applet 客户端的小程序"></a>概念：server applet 客户端的小程序</h2><ul>
+<li><p>Servlet就是一个接口，定义Java类被浏览器访问到（tomcat识别）</p>
+</li>
+<li><p>定义一个类，实现Servlet接口，复写方法。</p>
 </li>
 <li><p>快速入门</p>
 <ul>
@@ -47,6 +88,14 @@
 </ul>
 </li>
 </ul>
+<h2 id="体系结构"><a href="#体系结构" class="headerlink" title="体系结构"></a>体系结构</h2><p>GenericServlet ： 可以实现servic（）方法</p>
+<p>HttpServlet：复写doGet/doPost方法</p>
+<h2 id="Servlet相关配置"><a href="#Servlet相关配置" class="headerlink" title="Servlet相关配置"></a>Servlet相关配置</h2><p>1.urlpartten</p>
+<p>​    1.可以访问多个路径：@WebServlet({“/d 4”,”/dd4”})</p>
+<p>​    2.路径定义规则：</p>
+<p>​        1./xxx</p>
+<p>​        2./xxx/xxx:多层路径，目录结构</p>
+<p>​        3.*.do</p>
 ]]></content>
       <categories>
         <category>Web</category>
@@ -117,7 +166,7 @@
       </tags>
   </entry>
   <entry>
-    <title>数据笔记</title>
+    <title>数据库笔记</title>
     <url>/2020/02/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h2 id="DDL-（Data-Definition-Language）数据定义语言"><a href="#DDL-（Data-Definition-Language）数据定义语言" class="headerlink" title="DDL:（Data Definition Language）数据定义语言"></a>DDL:（Data Definition Language）数据定义语言</h2><h3 id="1-基础查询"><a href="#1-基础查询" class="headerlink" title="1.基础查询"></a>1.基础查询</h3><hr>
 <h3 id="2-条件查询"><a href="#2-条件查询" class="headerlink" title="2.条件查询"></a>2.条件查询</h3><ul>
