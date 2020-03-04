@@ -37,7 +37,7 @@
       appID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
+      hits: {"per_page":6},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
@@ -48,13 +48,13 @@
 
   <meta name="description" content="Http:基于TCP&#x2F;IP的高级协议 请求消息数据格式1.请求行 ​    请求方式 请求url 请求协议&#x2F;版本 ​    GET&#x2F;login.html HTTP&#x2F;1.1 ​    *请求方式 ​            GET:请求参数在url中，不安全 ​            POST：请求参数在请求体中 2.请求头">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Request">
+<meta property="og:title" content="Request笔记">
 <meta property="og:url" content="http://yoursite.com/2020/02/17/Request/index.html">
 <meta property="og:site_name" content="Ssinoo&#39;s blog">
 <meta property="og:description" content="Http:基于TCP&#x2F;IP的高级协议 请求消息数据格式1.请求行 ​    请求方式 请求url 请求协议&#x2F;版本 ​    GET&#x2F;login.html HTTP&#x2F;1.1 ​    *请求方式 ​            GET:请求参数在url中，不安全 ​            POST：请求参数在请求体中 2.请求头">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-17T12:48:08.618Z">
-<meta property="article:modified_time" content="2020-03-01T11:35:40.193Z">
+<meta property="article:modified_time" content="2020-03-04T05:48:20.909Z">
 <meta property="article:author" content="Ssinoo">
 <meta property="article:tag" content="Http">
 <meta property="article:tag" content="Request">
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title>Request | Ssinoo's blog</title>
+  <title>Request笔记 | Ssinoo's blog</title>
   
 
 
@@ -226,7 +226,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Request
+          Request笔记
         </h1>
 
         <div class="post-meta">
@@ -243,7 +243,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-01 11:35:40" itemprop="dateModified" datetime="2020-03-01T11:35:40Z">2020-03-01</time>
+                <time title="修改时间：2020-03-04 05:48:20" itemprop="dateModified" datetime="2020-03-04T05:48:20Z">2020-03-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -251,8 +251,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index">
-                    <span itemprop="name">Web</span>
+                  <a href="/categories/WEB/" itemprop="url" rel="index">
+                    <span itemprop="name">WEB</span>
                   </a>
                 </span>
             </span>
@@ -270,7 +270,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>170</span>
+              <span>264</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -302,6 +302,20 @@
 <p>​            1.User-Agent：获取服务器端，解决浏览器的兼容性</p>
 <p>3.请求空行</p>
 <p>​    空行</p>
+<h2 id="request"><a href="#request" class="headerlink" title="request"></a>request</h2><p>request和response对象是由服务器创建的</p>
+<p>request对象是来获取请求消息</p>
+<p>response对象是来设置响应消息</p>
+<h3 id="request功能"><a href="#request功能" class="headerlink" title="request功能"></a>request功能</h3><ol>
+<li><p>获取请求消息数据</p>
+<ol>
+<li><p>获取请求行数据</p>
+<ol>
+<li>方法</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
     </div>
 
@@ -397,7 +411,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Http"><span class="nav-number">1.</span> <span class="nav-text">Http:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#请求消息数据格式"><span class="nav-number">1.1.</span> <span class="nav-text">请求消息数据格式</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Http"><span class="nav-number">1.</span> <span class="nav-text">Http:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#请求消息数据格式"><span class="nav-number">1.1.</span> <span class="nav-text">请求消息数据格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#request"><span class="nav-number">2.</span> <span class="nav-text">request</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#request功能"><span class="nav-number">2.1.</span> <span class="nav-text">request功能</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -413,7 +427,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -426,7 +440,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -461,13 +475,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">24k</span>
+    <span title="站点总字数">30k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22 分钟</span>
+    <span title="站点阅读时长">28 分钟</span>
 </div>
  <!--
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":6},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="csscss样式背景   属性 描述    background 简写属性，作用是将背景属性设置在一个声明中。   background-attachment 背景图像是否固定或者随着页面的其余部分滚动。   background-color 设置元素的背景颜色。   background-image 把图像设置为背景。   background-position 设置背景图像的起始位置。   b">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html笔记">
+<meta property="og:url" content="http://yoursite.com/2020/03/04/html%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Ssinoo&#39;s blog">
+<meta property="og:description" content="csscss样式背景   属性 描述    background 简写属性，作用是将背景属性设置在一个声明中。   background-attachment 背景图像是否固定或者随着页面的其余部分滚动。   background-color 设置元素的背景颜色。   background-image 把图像设置为背景。   background-position 设置背景图像的起始位置。   b">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200304113343250.png">
+<meta property="article:published_time" content="2020-03-04T00:39:55.060Z">
+<meta property="article:modified_time" content="2020-03-04T05:48:02.366Z">
+<meta property="article:author" content="Ssinoo">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200304113343250.png">
+
+<link rel="canonical" href="http://yoursite.com/2020/03/04/html%E7%AC%94%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>html笔记 | Ssinoo's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Ssinoo's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ssinoo's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/04/html%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.jpg">
+      <meta itemprop="name" content="Ssinoo">
+      <meta itemprop="description" content="Self-discipline Freedom">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ssinoo's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          html笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-04 00:39:55 / 修改时间：05:48:02" itemprop="dateCreated datePublished" datetime="2020-03-04T00:39:55Z">2020-03-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/WEB/" itemprop="url" rel="index">
+                    <span itemprop="name">WEB</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="css"><a href="#css" class="headerlink" title="css"></a>css</h1><h2 id="css样式"><a href="#css样式" class="headerlink" title="css样式"></a>css样式</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background.asp" target="_blank" rel="noopener">background</a></td>
+<td align="left">简写属性，作用是将背景属性设置在一个声明中。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-attachment.asp" target="_blank" rel="noopener">background-attachment</a></td>
+<td align="left">背景图像是否固定或者随着页面的其余部分滚动。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-color.asp" target="_blank" rel="noopener">background-color</a></td>
+<td align="left">设置元素的背景颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-image.asp" target="_blank" rel="noopener">background-image</a></td>
+<td align="left">把图像设置为背景。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-position.asp" target="_blank" rel="noopener">background-position</a></td>
+<td align="left">设置背景图像的起始位置。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-repeat.asp" target="_blank" rel="noopener">background-repeat</a></td>
+<td align="left">设置背景图像是否及如何重复。</td>
+</tr>
+</tbody></table>
+<a id="more"></a>
+
+ <!-- more -->
+
+<h3 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_color.asp" target="_blank" rel="noopener">color</a></td>
+<td align="left">设置文本颜色</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_direction.asp" target="_blank" rel="noopener">direction</a></td>
+<td align="left">设置文本方向。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_dim_line-height.asp" target="_blank" rel="noopener">line-height</a></td>
+<td align="left">设置行高。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp" target="_blank" rel="noopener">letter-spacing</a></td>
+<td align="left">设置字符间距。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_text-align.asp" target="_blank" rel="noopener">text-align</a></td>
+<td align="left">对齐元素中的文本。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_text-decoration.asp" target="_blank" rel="noopener">text-decoration</a></td>
+<td align="left">向文本添加修饰。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_text-indent.asp" target="_blank" rel="noopener">text-indent</a></td>
+<td align="left">缩进元素中文本的首行。</td>
+</tr>
+<tr>
+<td align="left">text-shadow</td>
+<td align="left">设置文本阴影。CSS2 包含该属性，但是 CSS2.1 没有保留该属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_text-transform.asp" target="_blank" rel="noopener">text-transform</a></td>
+<td align="left">控制元素中的字母。</td>
+</tr>
+<tr>
+<td align="left">unicode-bidi</td>
+<td align="left">设置文本方向。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_white-space.asp" target="_blank" rel="noopener">white-space</a></td>
+<td align="left">设置元素中空白的处理方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp" target="_blank" rel="noopener">word-spacing</a></td>
+<td align="left">设置字间距。</td>
+</tr>
+</tbody></table>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font.asp" target="_blank" rel="noopener">font</a></td>
+<td align="left">简写属性。作用是把所有针对字体的属性设置在一个声明中。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-family.asp" target="_blank" rel="noopener">font-family</a></td>
+<td align="left">设置字体系列。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-size.asp" target="_blank" rel="noopener">font-size</a></td>
+<td align="left">设置字体的尺寸。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-size-adjust.asp" target="_blank" rel="noopener">font-size-adjust</a></td>
+<td align="left">当首选字体不可用时，对替换字体进行智能缩放。（CSS2.1 已删除该属性。）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-stretch.asp" target="_blank" rel="noopener">font-stretch</a></td>
+<td align="left">对字体进行水平拉伸。（CSS2.1 已删除该属性。）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-style.asp" target="_blank" rel="noopener">font-style</a></td>
+<td align="left">设置字体风格。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-variant.asp" target="_blank" rel="noopener">font-variant</a></td>
+<td align="left">以小型大写字体或者正常字体显示文本。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_weight.asp" target="_blank" rel="noopener">font-weight</a></td>
+<td align="left">设置字体的粗细。</td>
+</tr>
+</tbody></table>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>链接的四种状态：</p>
+<ul>
+<li>a:link - 普通的、未被访问的链接</li>
+<li>a:visited - 用户已访问的链接</li>
+<li>a:hover - 鼠标指针位于链接的上方</li>
+<li>a:active - 链接被点击的时刻</li>
+</ul>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_list-style.asp" target="_blank" rel="noopener">list-style</a></td>
+<td align="left">简写属性。用于把所有用于列表的属性设置于一个声明中。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_list-style-image.asp" target="_blank" rel="noopener">list-style-image</a></td>
+<td align="left">将图象设置为列表项标志。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_list-style-position.asp" target="_blank" rel="noopener">list-style-position</a></td>
+<td align="left">设置列表中列表项标志的位置。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_list-style-type.asp" target="_blank" rel="noopener">list-style-type</a></td>
+<td align="left">设置列表项标志的类型。</td>
+</tr>
+</tbody></table>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_border-collapse.asp" target="_blank" rel="noopener">border-collapse</a></td>
+<td align="left">设置是否把表格边框合并为单一的边框。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_border-spacing.asp" target="_blank" rel="noopener">border-spacing</a></td>
+<td align="left">设置分隔单元格边框的距离。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_caption-side.asp" target="_blank" rel="noopener">caption-side</a></td>
+<td align="left">设置表格标题的位置。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_empty-cells.asp" target="_blank" rel="noopener">empty-cells</a></td>
+<td align="left">设置是否显示表格中的空单元格。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_table-layout.asp" target="_blank" rel="noopener">table-layout</a></td>
+<td align="left">设置显示单元、行和列的算法。</td>
+</tr>
+</tbody></table>
+<h3 id="轮廓"><a href="#轮廓" class="headerlink" title="轮廓"></a>轮廓</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="left">CSS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_outline.asp" target="_blank" rel="noopener">outline</a></td>
+<td align="left">在一个声明中设置所有的轮廓属性。</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_outline-color.asp" target="_blank" rel="noopener">outline-color</a></td>
+<td align="left">设置轮廓的颜色。</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_outline-style.asp" target="_blank" rel="noopener">outline-style</a></td>
+<td align="left">设置轮廓的样式。</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_outline-width.asp" target="_blank" rel="noopener">outline-width</a></td>
+<td align="left">设置轮廓的宽度。</td>
+<td align="left">2</td>
+</tr>
+</tbody></table>
+<h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h3><h4 id="padding-内边距"><a href="#padding-内边距" class="headerlink" title="padding: 内边距"></a>padding: 内边距</h4><h4 id="margin-：外边距"><a href="#margin-：外边距" class="headerlink" title="margin ：外边距"></a>margin ：外边距</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="注册页面案例"><a href="#注册页面案例" class="headerlink" title="注册页面案例"></a>注册页面案例</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>register<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        body&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">background</span>: <span class="selector-tag">url</span>("20190325<span class="selector-class">.jpg</span>");</span></span><br><span class="line">            margin-top: 100px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.regi</span>&#123;</span></span><br><span class="line">            width: 900px;</span><br><span class="line">            height: 500px;</span><br><span class="line"><span class="css">            <span class="selector-tag">border</span>: 5<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#EEEEEE</span>;</span></span><br><span class="line">            background-color: white;</span><br><span class="line">            margin: auto;</span><br><span class="line">            padding: 15px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.regi-left</span>&#123;</span></span><br><span class="line">            float: left;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.regi-center</span>&#123;</span></span><br><span class="line">            padding-top: 20px;</span><br><span class="line">            float: left;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.regi-right</span>&#123;</span></span><br><span class="line">            float: right;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">        <span class="selector-class">.td_left</span>&#123;</span></span><br><span class="line">            width: 100px;</span><br><span class="line">            text-align: right;</span><br><span class="line">            height: 45px;</span><br><span class="line">            padding-left: 150px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.td_right</span>&#123;</span></span><br><span class="line">            padding-left: 30px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#username</span>,<span class="selector-id">#password</span>&#123;</span></span><br><span class="line">            width: 200px;</span><br><span class="line">            height: 30px;</span><br><span class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#A6A6A6</span>;</span></span><br><span class="line">            border-radius: 5px;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#btn_sub</span>&#123;</span></span><br><span class="line">            height: 50px;</span><br><span class="line">            width: 100px;</span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#ff7a89</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#ff7a89</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#td_btn</span>&#123;</span></span><br><span class="line">            padding-left: 150px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"regi"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"regi-left"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>新用户注册<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"#"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"regi-center"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">"table"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"td_left"</span>&gt;</span><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"username"</span>&gt;</span>姓名：<span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"td_right"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span> =<span class="string">"username"</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">placeholder</span> =<span class="string">"请输入名字"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"td_left"</span>&gt;</span><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"password"</span>&gt;</span>密码：<span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"td_right"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span> =<span class="string">"password"</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"请输入密码"</span>&gt;</span> <span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">"2"</span> <span class="attr">align</span>=<span class="string">"center"</span> <span class="attr">id</span>=<span class="string">"td_btn"</span> &gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">id</span>=<span class="string">"btn_sub"</span> <span class="attr">value</span>=<span class="string">"确定"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"regi-right"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>已有账号?<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>立即登入<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200304113343250.png" alt="image-20200304113343250"></p>
+
+    </div>
+
+    
+    
+    
+	
+	<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+  
+  </div>
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/HTML/" rel="tag"># HTML</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/02/JDBC/" rel="prev" title="JDBC">
+      <i class="fa fa-chevron-left"></i> JDBC
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/04/JavaScript/" rel="next" title="JavaScript笔记">
+      JavaScript笔记 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#css"><span class="nav-number">1.</span> <span class="nav-text">css</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#css样式"><span class="nav-number">1.1.</span> <span class="nav-text">css样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景"><span class="nav-number">1.1.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本"><span class="nav-number">1.1.2.</span> <span class="nav-text">文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体"><span class="nav-number">1.1.3.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">1.1.4.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">1.1.5.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格"><span class="nav-number">1.1.6.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#轮廓"><span class="nav-number">1.1.7.</span> <span class="nav-text">轮廓</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盒子模型"><span class="nav-number">1.1.8.</span> <span class="nav-text">盒子模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#padding-内边距"><span class="nav-number">1.1.8.1.</span> <span class="nav-text">padding: 内边距</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#margin-：外边距"><span class="nav-number">1.1.8.2.</span> <span class="nav-text">margin ：外边距</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册页面案例"><span class="nav-number">1.2.</span> <span class="nav-text">注册页面案例</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ssinoo"
+      src="/images/header.jpg">
+  <p class="site-author-name" itemprop="name">Ssinoo</p>
+  <div class="site-description" itemprop="description">Self-discipline Freedom</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ssinoo</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">30k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">28 分钟</span>
+</div>
+ <!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
+  </div>
+  -->
+
+<div id="days"></div>
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay=new Date("01/2/2020 15:13:14");//修改为自己的blog建站时间
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+    e_minsold=(e_hrsold-hrsold)*60;
+    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+    seconds=setzero(Math.floor((e_minsold-minsold)*60));
+    document.getElementById('days').innerHTML="本站已安全运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+    if (i<10)
+    {i="0" + i};
+    return i;
+}
+show_date_time();
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

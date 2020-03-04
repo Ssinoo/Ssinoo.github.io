@@ -1,10 +1,297 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JavaScript笔记</title>
+    <url>/2020/03/04/JavaScript/</url>
+    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">创建方法1.</span><br><span class="line">function 方法名称(形式参数列表)&#123;</span><br><span class="line">	方法体</span><br><span class="line">&#125;</span><br><span class="line">2.</span><br><span class="line">var fun = function(形式参数列表)&#123;</span><br><span class="line">	方法体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<!-- more --> 
+
+<h2 id="Array-数组对象"><a href="#Array-数组对象" class="headerlink" title="Array :数组对象"></a>Array :数组对象</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">创建：</span><br><span class="line">1.var arr &#x3D; new Array();</span><br><span class="line">2.var arr &#x3D; new Array();</span><br><span class="line">3.var arr &#x3D;[元素列表]；</span><br></pre></td></tr></table></figure>
+
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>点击图片切换<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"20190325.jpg"</span> <span class="attr">id</span> = <span class="string">"sakura"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> sakura = <span class="built_in">document</span>.getElementById(<span class="string">"sakura"</span>);</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> flag = <span class="literal">false</span>;</span></span><br><span class="line"><span class="actionscript">    sakura.onclick = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></span><br><span class="line">        if(flag)&#123;</span><br><span class="line"><span class="actionscript">            sakura.src=<span class="string">"1542983908(1).jpg"</span>;</span></span><br><span class="line"><span class="actionscript">            flag= <span class="literal">false</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="actionscript">        <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="actionscript">            sakura.src=<span class="string">"20190325.jpg"</span>;</span></span><br><span class="line"><span class="actionscript">            flag=<span class="literal">true</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h2><h3 id="window对象"><a href="#window对象" class="headerlink" title="window对象"></a>window对象</h3><h4 id="轮播图"><a href="#轮播图" class="headerlink" title="轮播图"></a>轮播图</h4><p>setInterval 重复执行</p>
+<p>setTimeout 执行一次</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>轮播图<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"img1.jpg"</span> <span class="attr">id</span> = <span class="string">"img"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"200px"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> img = <span class="built_in">document</span>.getElementById(<span class="string">"img"</span>);</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> num = <span class="number">1</span> ;</span></span><br><span class="line"><span class="actionscript">    <span class="function"><span class="keyword">function</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line">        num++</span><br><span class="line">        if (num&gt;3)&#123;</span><br><span class="line">            num =1;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="actionscript">        img.src=<span class="string">"img"</span>+num+<span class="string">".jpg"</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line">    setInterval(fun,1000);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Location</p>
+<h3 id="实现点击后几秒-再跳转其他页面"><a href="#实现点击后几秒-再跳转其他页面" class="headerlink" title="实现点击后几秒 再跳转其他页面"></a>实现点击后几秒 再跳转其他页面</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">STYLE</span>&gt;</span></span><br><span class="line">        p&#123;</span><br><span class="line">            text-align: center;</span><br><span class="line">        &#125;</span><br><span class="line">        span&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">color</span>: <span class="selector-id">#ff7a89</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">STYLE</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">id</span>=<span class="string">"href"</span>&gt;</span>baidu<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span> =<span class="string">time</span> &gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> href = <span class="built_in">document</span>.getElementById(<span class="string">"href"</span>);</span></span><br><span class="line"><span class="actionscript">    href.onclick=<span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></span><br><span class="line">        setInterval(showtime,1000);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> second = <span class="number">5</span>;</span></span><br><span class="line"><span class="actionscript">    <span class="function"><span class="keyword">function</span> <span class="title">showtime</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line">        second -- ;</span><br><span class="line">        if(second==0)&#123;</span><br><span class="line"><span class="actionscript">            location.href=<span class="string">"https://www.baidu.com/"</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> time = <span class="built_in">document</span>.getElementById(<span class="string">"time"</span>);</span></span><br><span class="line"><span class="actionscript">        time.innerHTML = second+<span class="string">"秒后，自动跳转。。。。"</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>WEB</category>
+      </categories>
+      <tags>
+        <tag>-HTML -JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>html笔记</title>
+    <url>/2020/03/04/html%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="css"><a href="#css" class="headerlink" title="css"></a>css</h1><h2 id="css样式"><a href="#css样式" class="headerlink" title="css样式"></a>css样式</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background.asp" target="_blank" rel="noopener">background</a></td>
+<td align="left">简写属性，作用是将背景属性设置在一个声明中。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-attachment.asp" target="_blank" rel="noopener">background-attachment</a></td>
+<td align="left">背景图像是否固定或者随着页面的其余部分滚动。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-color.asp" target="_blank" rel="noopener">background-color</a></td>
+<td align="left">设置元素的背景颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-image.asp" target="_blank" rel="noopener">background-image</a></td>
+<td align="left">把图像设置为背景。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-position.asp" target="_blank" rel="noopener">background-position</a></td>
+<td align="left">设置背景图像的起始位置。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_background-repeat.asp" target="_blank" rel="noopener">background-repeat</a></td>
+<td align="left">设置背景图像是否及如何重复。</td>
+</tr>
+</tbody></table>
+<a id="more"></a>
+
+ <!-- more -->
+
+<h3 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_color.asp" target="_blank" rel="noopener">color</a></td>
+<td align="left">设置文本颜色</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_direction.asp" target="_blank" rel="noopener">direction</a></td>
+<td align="left">设置文本方向。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_dim_line-height.asp" target="_blank" rel="noopener">line-height</a></td>
+<td align="left">设置行高。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp" target="_blank" rel="noopener">letter-spacing</a></td>
+<td align="left">设置字符间距。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_text-align.asp" target="_blank" rel="noopener">text-align</a></td>
+<td align="left">对齐元素中的文本。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_text-decoration.asp" target="_blank" rel="noopener">text-decoration</a></td>
+<td align="left">向文本添加修饰。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_text-indent.asp" target="_blank" rel="noopener">text-indent</a></td>
+<td align="left">缩进元素中文本的首行。</td>
+</tr>
+<tr>
+<td align="left">text-shadow</td>
+<td align="left">设置文本阴影。CSS2 包含该属性，但是 CSS2.1 没有保留该属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_text-transform.asp" target="_blank" rel="noopener">text-transform</a></td>
+<td align="left">控制元素中的字母。</td>
+</tr>
+<tr>
+<td align="left">unicode-bidi</td>
+<td align="left">设置文本方向。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_white-space.asp" target="_blank" rel="noopener">white-space</a></td>
+<td align="left">设置元素中空白的处理方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp" target="_blank" rel="noopener">word-spacing</a></td>
+<td align="left">设置字间距。</td>
+</tr>
+</tbody></table>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font.asp" target="_blank" rel="noopener">font</a></td>
+<td align="left">简写属性。作用是把所有针对字体的属性设置在一个声明中。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-family.asp" target="_blank" rel="noopener">font-family</a></td>
+<td align="left">设置字体系列。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-size.asp" target="_blank" rel="noopener">font-size</a></td>
+<td align="left">设置字体的尺寸。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-size-adjust.asp" target="_blank" rel="noopener">font-size-adjust</a></td>
+<td align="left">当首选字体不可用时，对替换字体进行智能缩放。（CSS2.1 已删除该属性。）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-stretch.asp" target="_blank" rel="noopener">font-stretch</a></td>
+<td align="left">对字体进行水平拉伸。（CSS2.1 已删除该属性。）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-style.asp" target="_blank" rel="noopener">font-style</a></td>
+<td align="left">设置字体风格。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_font-variant.asp" target="_blank" rel="noopener">font-variant</a></td>
+<td align="left">以小型大写字体或者正常字体显示文本。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_font_weight.asp" target="_blank" rel="noopener">font-weight</a></td>
+<td align="left">设置字体的粗细。</td>
+</tr>
+</tbody></table>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>链接的四种状态：</p>
+<ul>
+<li>a:link - 普通的、未被访问的链接</li>
+<li>a:visited - 用户已访问的链接</li>
+<li>a:hover - 鼠标指针位于链接的上方</li>
+<li>a:active - 链接被点击的时刻</li>
+</ul>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_list-style.asp" target="_blank" rel="noopener">list-style</a></td>
+<td align="left">简写属性。用于把所有用于列表的属性设置于一个声明中。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_list-style-image.asp" target="_blank" rel="noopener">list-style-image</a></td>
+<td align="left">将图象设置为列表项标志。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_list-style-position.asp" target="_blank" rel="noopener">list-style-position</a></td>
+<td align="left">设置列表中列表项标志的位置。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_list-style-type.asp" target="_blank" rel="noopener">list-style-type</a></td>
+<td align="left">设置列表项标志的类型。</td>
+</tr>
+</tbody></table>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_border-collapse.asp" target="_blank" rel="noopener">border-collapse</a></td>
+<td align="left">设置是否把表格边框合并为单一的边框。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_border-spacing.asp" target="_blank" rel="noopener">border-spacing</a></td>
+<td align="left">设置分隔单元格边框的距离。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_caption-side.asp" target="_blank" rel="noopener">caption-side</a></td>
+<td align="left">设置表格标题的位置。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_empty-cells.asp" target="_blank" rel="noopener">empty-cells</a></td>
+<td align="left">设置是否显示表格中的空单元格。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_tab_table-layout.asp" target="_blank" rel="noopener">table-layout</a></td>
+<td align="left">设置显示单元、行和列的算法。</td>
+</tr>
+</tbody></table>
+<h3 id="轮廓"><a href="#轮廓" class="headerlink" title="轮廓"></a>轮廓</h3><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="left">CSS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_outline.asp" target="_blank" rel="noopener">outline</a></td>
+<td align="left">在一个声明中设置所有的轮廓属性。</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_outline-color.asp" target="_blank" rel="noopener">outline-color</a></td>
+<td align="left">设置轮廓的颜色。</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_outline-style.asp" target="_blank" rel="noopener">outline-style</a></td>
+<td align="left">设置轮廓的样式。</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.w3school.com.cn/cssref/pr_outline-width.asp" target="_blank" rel="noopener">outline-width</a></td>
+<td align="left">设置轮廓的宽度。</td>
+<td align="left">2</td>
+</tr>
+</tbody></table>
+<h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h3><h4 id="padding-内边距"><a href="#padding-内边距" class="headerlink" title="padding: 内边距"></a>padding: 内边距</h4><h4 id="margin-：外边距"><a href="#margin-：外边距" class="headerlink" title="margin ：外边距"></a>margin ：外边距</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="注册页面案例"><a href="#注册页面案例" class="headerlink" title="注册页面案例"></a>注册页面案例</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>register<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        body&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">background</span>: <span class="selector-tag">url</span>("20190325<span class="selector-class">.jpg</span>");</span></span><br><span class="line">            margin-top: 100px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.regi</span>&#123;</span></span><br><span class="line">            width: 900px;</span><br><span class="line">            height: 500px;</span><br><span class="line"><span class="css">            <span class="selector-tag">border</span>: 5<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#EEEEEE</span>;</span></span><br><span class="line">            background-color: white;</span><br><span class="line">            margin: auto;</span><br><span class="line">            padding: 15px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.regi-left</span>&#123;</span></span><br><span class="line">            float: left;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.regi-center</span>&#123;</span></span><br><span class="line">            padding-top: 20px;</span><br><span class="line">            float: left;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.regi-right</span>&#123;</span></span><br><span class="line">            float: right;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">        <span class="selector-class">.td_left</span>&#123;</span></span><br><span class="line">            width: 100px;</span><br><span class="line">            text-align: right;</span><br><span class="line">            height: 45px;</span><br><span class="line">            padding-left: 150px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.td_right</span>&#123;</span></span><br><span class="line">            padding-left: 30px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#username</span>,<span class="selector-id">#password</span>&#123;</span></span><br><span class="line">            width: 200px;</span><br><span class="line">            height: 30px;</span><br><span class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#A6A6A6</span>;</span></span><br><span class="line">            border-radius: 5px;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#btn_sub</span>&#123;</span></span><br><span class="line">            height: 50px;</span><br><span class="line">            width: 100px;</span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#ff7a89</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#ff7a89</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#td_btn</span>&#123;</span></span><br><span class="line">            padding-left: 150px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"regi"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"regi-left"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>新用户注册<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"#"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"regi-center"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">"table"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"td_left"</span>&gt;</span><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"username"</span>&gt;</span>姓名：<span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"td_right"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span> =<span class="string">"username"</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">placeholder</span> =<span class="string">"请输入名字"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"td_left"</span>&gt;</span><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"password"</span>&gt;</span>密码：<span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"td_right"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span> =<span class="string">"password"</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"请输入密码"</span>&gt;</span> <span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">"2"</span> <span class="attr">align</span>=<span class="string">"center"</span> <span class="attr">id</span>=<span class="string">"td_btn"</span> &gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">id</span>=<span class="string">"btn_sub"</span> <span class="attr">value</span>=<span class="string">"确定"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"regi-right"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>已有账号?<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>立即登入<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5C44910%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200304113343250.png" alt="image-20200304113343250"></p>
+]]></content>
+      <categories>
+        <category>WEB</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JDBC</title>
+    <url>/2020/03/02/JDBC/</url>
+    <content><![CDATA[<h2 id="jdbc快速入门"><a href="#jdbc快速入门" class="headerlink" title="jdbc快速入门"></a>jdbc快速入门</h2><p>步骤：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">jdbc</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> ClassNotFoundException, SQLException </span>&#123;</span><br><span class="line">        <span class="comment">//2，注册驱动包</span></span><br><span class="line">        Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">        <span class="comment">//3.获取数据库连接</span></span><br><span class="line">        Connection conn  = DriverManager.getConnection  (<span class="string">"jdbc:mysql://localhost:3306/noo"</span>,<span class="string">"root"</span>,<span class="string">"000916noo"</span>);</span><br><span class="line">        <span class="comment">//4.定义sql语句</span></span><br><span class="line">        String sql =<span class="string">"insert into task1 values ('01' , '德玛西亚' , '男' , '99');"</span>;</span><br><span class="line">        <span class="comment">//5.获取执行sql的对象 Statement</span></span><br><span class="line">        Statement sta = conn.createStatement();</span><br><span class="line">        <span class="comment">//6.执行sql</span></span><br><span class="line">        <span class="keyword">int</span> count = sta.executeUpdate(sql);</span><br><span class="line">        <span class="comment">//7.处理结果</span></span><br><span class="line">        System.out.println(count);</span><br><span class="line">        <span class="comment">//8.释放资源</span></span><br><span class="line">        sta.close();</span><br><span class="line">        conn.close();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+ <a id="more"></a>
+
+ <!-- more -->
+
+<h3 id="抽取JDBC工具类-JDBCUtils"><a href="#抽取JDBC工具类-JDBCUtils" class="headerlink" title="抽取JDBC工具类 JDBCUtils"></a>抽取JDBC工具类 JDBCUtils</h3><p>properties</p>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>JDBC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>抗疫日记</title>
     <url>/2020/03/01/%E6%8A%97%E7%96%AB%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="《抗疫日记》"><a href="#《抗疫日记》" class="headerlink" title="《抗疫日记》"></a>《抗疫日记》</h1><p>  小学生作文，文笔也太差了</p>
-<a id="more"></a> 
+ <a id="more"></a>
+
+<!-- more --> 
+
+
 
 <p>  2020，听起来很好听的年份，一个拥有重要事件的年份，要实现全面小康的一年。生肖年新的一轮的开端。 </p>
 <p>  1月初放假了，在家没呆几天就回湖北老家了，本来开开心心买了一堆年货，可以陪爷爷奶奶和很久不见的堂兄弟们，回老家的第二天，湖北爆发了新型冠状病毒，刚开始不以为然，偶尔还去小卖部买几瓶喝的，去快递点拿快递，想着就这种小病怎么可能会传染到我。</p>
@@ -19,7 +306,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Request</title>
+    <title>Request笔记</title>
     <url>/2020/02/17/Request/</url>
     <content><![CDATA[<h2 id="Http"><a href="#Http" class="headerlink" title="Http:"></a>Http:</h2><p>基于TCP/IP的高级协议</p>
 <h3 id="请求消息数据格式"><a href="#请求消息数据格式" class="headerlink" title="请求消息数据格式"></a>请求消息数据格式</h3><p>1.请求行</p>
@@ -34,9 +321,23 @@
 <p>​            1.User-Agent：获取服务器端，解决浏览器的兼容性</p>
 <p>3.请求空行</p>
 <p>​    空行</p>
+<h2 id="request"><a href="#request" class="headerlink" title="request"></a>request</h2><p>request和response对象是由服务器创建的</p>
+<p>request对象是来获取请求消息</p>
+<p>response对象是来设置响应消息</p>
+<h3 id="request功能"><a href="#request功能" class="headerlink" title="request功能"></a>request功能</h3><ol>
+<li><p>获取请求消息数据</p>
+<ol>
+<li><p>获取请求行数据</p>
+<ol>
+<li>方法</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 ]]></content>
       <categories>
-        <category>Web</category>
+        <category>WEB</category>
       </categories>
       <tags>
         <tag>Http</tag>
@@ -58,6 +359,10 @@
 <li><p>2.定义一个类，实现Servlet接口</p>
 </li>
 <li><p>3.复写接口中的方法</p>
+ <a id="more"></a>
+
+ <!-- more -->
+
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	<span class="comment">//初始化方法，Servlet被创建时执行一次</span></span><br><span class="line"><span class="number">1</span>.<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(ServletConfig servletConfig)</span> <span class="keyword">throws</span> ServletException</span></span><br><span class="line"><span class="function">	<span class="comment">//获取 ServletConfig对象</span></span></span><br><span class="line"><span class="function">2.<span class="keyword">public</span> ServletConfig <span class="title">getServletConfig</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//提供服务方法</span></span><br><span class="line"><span class="number">3</span>.<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest servletRequest, ServletResponse servletResponse)</span> <span class="keyword">throws</span> ServletException, IOException</span></span><br><span class="line"><span class="function">	<span class="comment">//获取Servlet的一些信息</span></span></span><br><span class="line"><span class="function">4.<span class="keyword">public</span> String <span class="title">getServletInfo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//销毁方法</span></span><br><span class="line">    <span class="comment">//在服务器正常关闭时，执行一次</span></span><br><span class="line"><span class="number">5</span>.<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>4.配置Servlet</p>
@@ -98,7 +403,7 @@
 <p>​        3.*.do</p>
 ]]></content>
       <categories>
-        <category>Web</category>
+        <category>WEB</category>
       </categories>
       <tags>
         <tag>web</tag>
@@ -111,9 +416,15 @@
     <content><![CDATA[<h1 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h1><ul>
 <li><p>启动</p>
 <ul>
-<li>在bin/startup.bat,双击运行</li>
-<li><a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> 自己电脑作为客户端</li>
-<li>http://别人的ip:8080 </li>
+<li><p>在bin/startup.bat,双击运行</p>
+</li>
+<li><p><a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> 自己电脑作为客户端</p>
+</li>
+<li><p>http://别人的ip:8080 </p>
+<a id="more"></a>
+
+<!-- more -->
+</li>
 </ul>
 </li>
 <li><p>部署</p>
@@ -158,7 +469,7 @@
 </ul>
 ]]></content>
       <categories>
-        <category>Web</category>
+        <category>WEB</category>
       </categories>
       <tags>
         <tag>web</tag>
@@ -168,7 +479,11 @@
   <entry>
     <title>数据库笔记</title>
     <url>/2020/02/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h2 id="DDL-（Data-Definition-Language）数据定义语言"><a href="#DDL-（Data-Definition-Language）数据定义语言" class="headerlink" title="DDL:（Data Definition Language）数据定义语言"></a>DDL:（Data Definition Language）数据定义语言</h2><h3 id="1-基础查询"><a href="#1-基础查询" class="headerlink" title="1.基础查询"></a>1.基础查询</h3><hr>
+    <content><![CDATA[<h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h2 id="DDL-（Data-Definition-Language）数据定义语言"><a href="#DDL-（Data-Definition-Language）数据定义语言" class="headerlink" title="DDL:（Data Definition Language）数据定义语言"></a>DDL:（Data Definition Language）数据定义语言</h2><a id="more"></a>
+
+ <!-- more -->
+
+<h3 id="1-基础查询"><a href="#1-基础查询" class="headerlink" title="1.基础查询"></a>1.基础查询</h3><hr>
 <h3 id="2-条件查询"><a href="#2-条件查询" class="headerlink" title="2.条件查询"></a>2.条件查询</h3><ul>
 <li><p>语法：  select 查询列表 from 表明 where 筛选条件;</p>
 </li>
