@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-11T06:04:04.083Z</updated>
+  <updated>2020-03-19T13:53:07.947Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>抗疫日记</title>
+    <link href="http://yoursite.com/2020/03/19/%E6%8A%97%E7%96%AB%E6%97%A5%E8%AE%B03/"/>
+    <id>http://yoursite.com/2020/03/19/%E6%8A%97%E7%96%AB%E6%97%A5%E8%AE%B03/</id>
+    <published>2020-03-19T13:21:20.535Z</published>
+    <updated>2020-03-19T13:53:07.947Z</updated>
+    
+    <content type="html"><![CDATA[<p>ps:这次真是我自己想写的</p> <a id="more"></a><!-- more --> <p>​    今天真的是抗疫期间最气的一次了，身为湖北人回株洲，理应居家隔离，我认同这件事，毕竟现在这个期间谁不怕湖北人呢？</p><p>​    </p><p><img src="https://raw.githubusercontent.com/Ssinoo/Blogimg/master/picgo/20200319212851.jpg" alt=""></p><p><img src="https://raw.githubusercontent.com/Ssinoo/Blogimg/master/picgo/20200319212923.jpg" alt=""></p><p>​    Today </p><p>​    叫我们居家隔离，才1天就叫我们出门去核酸检测，检测就算了，因为没有健康证明所以不能让们检测，提供了湖北打卡了绿码不认？？？ 这不是矛盾嘛？？？？ </p><p>​    这nmb 核酸检测不就是告诉你健不健康的,有健康证明再检测 我吐了,叫我们居家隔离，又叫我们出去 聚集 检测（是不是想让一些没得病去哪里得病？），然后又要我们去打印店搞健康证明，这不就增加了接触嘛。这一手操作看的我脑壳晕。</p><p>​    今年鼠年，在湖北发生了这样的事情，恰巧我也是湖北人，鼠年真的成为了一只过街老鼠，虽然要给武汉加油，给湖北加油，湖北除武汉下面的地级市真的很惨，工作做不了，家里也无经济来源，回到了株洲又是一些稀奇古怪的政策，我们尊重和服从政策但是也不要搞一些迷惑行为的政策吧。</p><p>​    3月19了，寒假还没有结束，甚至全国的学生，高三的学生也依然处于寒假中。学校提供了500的救助金给湖北学生，但是别人的学校给了1千（hhh，不能道德绑架嗷，只是柠檬下）。</p><p>​    现在每天的工作日是要进行网课学习的，有的老师确实可以，直播讲课，但是也有直接扔一堆课件也看内容和质量让我们无脑的学习，真的没点意义和作用，无意义的打卡和学习，但是可能是我太菜了吧，没好好学习还好意思说，在没进行学校网课的时候，我也一直在网上是学习的，<strong>u1s1，我在哔站上大学</strong>,课程质量和内容方面真的很不错。不能要求学校符合自己，自己适应学校吧。</p><p>​    但是今天真的令人生气，害，疫情快点结束吧，快被烦死了。总是有一堆迷惑的政策和行为，说来也惭愧，在学校开始进行网课，就不想学习了，一种任务式的完成，被捆绑和约束的学习真的很不舒服，之前还天天进行了学习，不学习对不起自己这样惭愧感，现在只有一种机械式的服从命令，压抑和烦躁<em>而且网课的质量也差，也是随便应付我们的</em>。</p><p>​    4月份不知道，有没有可能开学，估计行叭？</p><p>​    真心要吐槽，吐了，吐了。</p><p>​    疫情快过去吧，湖北也能好起来，家里的经济也能恢复。</p><p>​    <strong>Peace</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ps:这次真是我自己想写的&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="daily" scheme="http://yoursite.com/categories/daily/"/>
+    
+    
+      <category term="日记" scheme="http://yoursite.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>抗疫日记2</title>
@@ -174,14 +197,11 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Http&quot;&gt;&lt;a href=&quot;#Http&quot; class=&quot;headerlink&quot; title=&quot;Http:&quot;&gt;&lt;/a&gt;Http:&lt;/h2&gt;&lt;p&gt;基于TCP/IP的高级协议&lt;/p&gt;
-&lt;h3 id=&quot;请求消息数据格式&quot;&gt;&lt;a href=&quot;#请求消息数据格式&quot; class=&quot;headerlink&quot; title=&quot;请求消息数据格式&quot;&gt;&lt;/a&gt;请求消息数据格式&lt;/h3&gt;&lt;p&gt;1.请求行&lt;/p&gt;
-&lt;p&gt;​    请求方式 请求url 请求协议/版本&lt;/p&gt;
-&lt;p&gt;​    GET/login.html HTTP/1.1&lt;/p&gt;
-&lt;p&gt;​    *请求方式&lt;/p&gt;
-&lt;p&gt;​            GET:请求参数在url中，不安全&lt;/p&gt;
-&lt;p&gt;​            POST：请求参数在请求体中&lt;/p&gt;
-&lt;p&gt;2.请求头&lt;/p&gt;
+      
+      
+        &lt;h2 id=&quot;Http&quot;&gt;&lt;a href=&quot;#Http&quot; class=&quot;headerlink&quot; title=&quot;Http:&quot;&gt;&lt;/a&gt;Http:&lt;/h2&gt;&lt;p&gt;基于TCP/IP的高级协议&lt;/p&gt;
+&lt;h3 id=&quot;请求消息数据格式&quot;&gt;&lt;a href=&quot;#请求消息数据格式&quot; clas
+      
     
     </summary>
     
@@ -297,18 +317,13 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;live2d&quot;&gt;&lt;a href=&quot;#live2d&quot; class=&quot;headerlink&quot; title=&quot;live2d&quot;&gt;&lt;/a&gt;live2d&lt;/h2&gt;&lt;p&gt;今天设置了一个 live2d的人物模型在右下角&lt;/p&gt;
-&lt;font color=&quot;bule&quot;&gt;
+      
+      
+        &lt;h2 id=&quot;live2d&quot;&gt;&lt;a href=&quot;#live2d&quot; class=&quot;headerlink&quot; title=&quot;live2d&quot;&gt;&lt;/a&gt;live2d&lt;/h2&gt;&lt;p&gt;今天设置了一个 live2d的人物模型在右下角&lt;/p&gt;
+&lt;font color =bule &gt;
 
-&lt;p&gt;老二刺猿了。。。。&lt;/p&gt;
-&lt;/font&gt;
-
-&lt;h3 id=&quot;第一步&quot;&gt;&lt;a href=&quot;#第一步&quot; class=&quot;headerlink&quot; title=&quot;第一步&quot;&gt;&lt;/a&gt;第一步&lt;/h3&gt;&lt;p&gt;博客的根目录下执行下方命令：&lt;/p&gt;
-&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-helper-live2d --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;第二步&quot;&gt;&lt;a href=&quot;#第二步&quot; class=&quot;headerlink&quot; title=&quot;第二步&quot;&gt;&lt;/a&gt;第二步&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install live2d-widget-model-你选的人物模型名字 --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;第三步&quot;&gt;&lt;a href=&quot;#第三步&quot; class=&quot;headerlink&quot; title=&quot;第三步&quot;&gt;&lt;/a&gt;第三步&lt;/h3&gt;&lt;p&gt;在主题config下 加入以下代码&lt;/p&gt;
+&lt;p&gt;老二
+      
     
     </summary>
     
@@ -331,8 +346,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Typora&quot;&gt;&lt;a href=&quot;#Typora&quot; class=&quot;headerlink&quot; title=&quot;Typora&quot;&gt;&lt;/a&gt;Typora&lt;/h1&gt;&lt;p&gt; 第四篇博客，虽然都不是什么有营养的东西，但是也看了很多教程，关于博客的搭建和博客的书写，昨天晚上看到了Typora软件的推荐，所以我用来试试，这篇博客后面的内容，用来写MarkDown的语法，和Typora不同的使用方法。&lt;/p&gt;
-
+      
+      
+        &lt;h1 id=&quot;Typora&quot;&gt;&lt;a href=&quot;#Typora&quot; class=&quot;headerlink&quot; title=&quot;Typora&quot;&gt;&lt;/a&gt;Typora&lt;/h1&gt;&lt;p&gt; 第四篇博客，虽然都不是什么有营养的东西，但是也看了很多教程，关于博客的搭建和博客的书写，昨天晚上看到了Ty
+      
     
     </summary>
     
@@ -355,14 +372,11 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;My-third-Blog&quot;&gt;&lt;a href=&quot;#My-third-Blog&quot; class=&quot;headerlink&quot; title=&quot;My third Blog&quot;&gt;&lt;/a&gt;My third Blog&lt;/h1&gt;&lt;p&gt;categories:  daily &lt;/p&gt;
-&lt;h5 id=&quot;1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用&quot;&gt;&lt;a href=&quot;#1-经过了又一天的初步学习，并且下载了markdownpad-amp-amp-Notepad这两个软件，发现还是有很多东西需要学习并且会使用&quot; class=&quot;headerlink&quot; title=&quot;1.经过了又一天的初步学习，并且下载了markdownpad&amp;amp;&amp;amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用&quot;&gt;&lt;/a&gt;1.经过了又一天的初步学习，并且下载了markdownpad&amp;amp;&amp;amp;Notepad这两个软件，发现还是有很多东西需要学习并且会使用&lt;/h5&gt;&lt;h5 id=&quot;2-以后我的个人Bolg作为自己学习的储备室&quot;&gt;&lt;a href=&quot;#2-以后我的个人Bolg作为自己学习的储备室&quot; class=&quot;headerlink&quot; title=&quot;2.以后我的个人Bolg作为自己学习的储备室&quot;&gt;&lt;/a&gt;2.以后我的个人Bolg作为自己学习的储备室&lt;/h5&gt;&lt;font color=&quot;red&quot;&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;1，英语的写作可以屯进来，还有日语的写作&lt;br&gt;   2，日常学习的代码，整理一个相当于对自己有帮助的Blog出来&lt;br&gt;   3，可以当做自己的日记本~~&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/font&gt;  &lt;p&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;3，好好学习哈，加油&quot;&gt;&lt;a href=&quot;#3，好好学习哈，加油&quot; class=&quot;headerlink&quot; title=&quot;3，好好学习哈，加油~~&quot;&gt;&lt;/a&gt;3，好好学习哈，加油~~&lt;/h5&gt;&lt;p&gt;2020/2/2 17:34:46 &lt;/p&gt;
-
+      
+      
+        &lt;h1 id=&quot;My-third-Blog&quot;&gt;&lt;a href=&quot;#My-third-Blog&quot; class=&quot;headerlink&quot; title=&quot;My third Blog&quot;&gt;&lt;/a&gt;My third Blog&lt;/h1&gt;&lt;p&gt;categories:  daily &lt;/p&gt;
+&lt;h
+      
     
     </summary>
     
@@ -385,11 +399,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;1.整体的优化还没有完全弄完，还是要把前端的知识认真学完&lt;br&gt;2.这头像为什么有两个，没找出问题&lt;br&gt;3.先就这样吧，以后再慢慢的优化！！！&lt;/p&gt;
+      
+      
+        &lt;p&gt;1.整体的优化还没有完全弄完，还是要把前端的知识认真学完&lt;br&gt;2.这头像为什么有两个，没找出问题&lt;br&gt;3.先就这样吧，以后再慢慢的优化！！！&lt;/p&gt;
 &lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;I can do it!!!!!!!!!!!&lt;del&gt;~&lt;/del&gt;!!!!!!!!!&lt;/li&gt;
-&lt;/ol&gt;
-
+&lt;li&gt;I can do it!!!!!!!!!!!&lt;del&gt;~&lt;/del&gt;!!!!!!!
+      
     
     </summary>
     
@@ -412,9 +427,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;开通自己的个人博客了，基于hexo还有GitHub的个人仓库，&lt;/p&gt;
+      
+      
+        &lt;p&gt;开通自己的个人博客了，基于hexo还有GitHub的个人仓库，&lt;/p&gt;
 &lt;p&gt;为了好玩和记录，just like diary~&lt;/p&gt;
 
+      
     
     </summary>
     
