@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>抗疫日记</title>
+    <title>CSS学习笔记</title>
+    <url>/2020/04/15/CSS/</url>
+    <content><![CDATA[<a id="more"></a>
+
+ <!-- more -->
+
+]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ajax</title>
+    <url>/2020/04/13/Ajax/</url>
+    <content><![CDATA[<h2 id="Ajax-异步"><a href="#Ajax-异步" class="headerlink" title="Ajax 异步"></a>Ajax 异步</h2>]]></content>
+  </entry>
+  <entry>
+    <title>抗疫日记3</title>
     <url>/2020/03/19/%E6%8A%97%E7%96%AB%E6%97%A5%E8%AE%B03/</url>
     <content><![CDATA[<p>ps:这次真是我自己想写的</p>
  <a id="more"></a>
