@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-15T08:20:58.901Z</updated>
+  <updated>2020-09-26T02:25:23.084Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>箭头函数</title>
+    <link href="http://yoursite.com/2020/09/26/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/"/>
+    <id>http://yoursite.com/2020/09/26/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/</id>
+    <published>2020-09-26T02:25:23.084Z</published>
+    <updated>2020-09-26T02:25:23.084Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>CSS学习笔记</title>
